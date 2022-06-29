@@ -1,2 +1,4 @@
 .vscode
 blog_env
+__pycache__
+migrations
