@@ -1,0 +1,69 @@
+{
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true,
+      "blog_env": true,
+      "README.md": true
+    },
+    "hide-files.files": [
+      "blog_env",
+      "README.md"
+    ],
+    "emmet.includeLanguages": {
+        "django-html": "html",
+        "jinja-html": "html"
+    },
+    "[django-html]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.quickSuggestions": {
+            "comments": true,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on"
+    },
+
+
+    "[html]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+    //   "[django-html]": {
+    //     "editor.defaultFormatter": "monosans.djlint"
+    //   },
+      "[handlebars]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[hbs]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[mustache]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[jinja]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[jinja-html]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[nj]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[njk]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[nunjucks]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+      "[twig]": {
+        "editor.defaultFormatter": "monosans.djlint"
+      },
+}
