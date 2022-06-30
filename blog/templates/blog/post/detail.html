@@ -3,7 +3,7 @@
 {% block title %}{{post.title}}{% endblock title %}
 
 {% block content %}
-    <h2>{{post.title}}</h2>
+    <h2 class="heading-2">{{post.title}}</h2>
     <p>published {{post.publish}} by {{post.author}}</p>   
     {{post.body|linebreaks}} 
 {% endblock content %}

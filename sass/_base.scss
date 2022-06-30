@@ -6,6 +6,9 @@ $color-grey-light: #858799;
 $color-white: #fff;
 $color-black: #000;
 
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Playfair Display", serif;
+
 *,
 *::before,
 *::after {
@@ -20,16 +23,22 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $font-primary;
   color: $color-white;
+  background-color: #f6f6f6;
   font-weight: 400;
   line-height: 1.6;
   background-image: url(../blog/static/blog/img/bg.jpg);
 }
 .container {
   display: grid;
-  grid-template-rows: 40vh 50vh 10vh;
-  grid-template-columns: repeat(6, minmax(25rem, 1fr));
+  grid-template-rows: [header-start] 55vh [header-end] max-content max-content 10vh;
+  grid-template-columns:
+    repeat(2, minmax(0rem, 5vw))
+    repeat(2, minmax(10rem, 10vw))
+    repeat(2, minmax(10rem, 1fr))
+    repeat(2, minmax(0rem, 5vw));
   grid-gap: 4rem;
   padding: 4rem;
+  justify-content: center;
 }

@@ -1,3 +1,15 @@
+.u-h-margin-small {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.u-h-margin-medium {
+  margin-left: 4rem;
+  margin-right: 4rem; }
+
+.u-h-margin-large {
+  margin-left: 8rem;
+  margin-right: 8rem; }
+
 *,
 *::before,
 *::after {
@@ -12,34 +24,98 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: #fff;
+  background-color: #f6f6f6;
   font-weight: 400;
   line-height: 1.6;
   background-image: url(../blog/static/blog/img/bg.jpg); }
 
 .container {
   display: grid;
-  grid-template-rows: 40vh 50vh 10vh;
-  grid-template-columns: repeat(6, minmax(25rem, 1fr));
+  grid-template-rows: [header-start] 55vh [header-end] max-content max-content 10vh;
+  grid-template-columns: repeat(2, minmax(0rem, 5vw)) repeat(2, minmax(10rem, 10vw)) repeat(2, minmax(10rem, 1fr)) repeat(2, minmax(0rem, 5vw));
   grid-gap: 4rem;
-  padding: 4rem; }
+  padding: 4rem;
+  justify-content: center; }
 
 .header {
-  grid-column: 2 / span 4;
+  grid-column: 3 / span 4;
   grid-row: 1 / 2;
-  background-color: crimson;
+  background-image: url(/static/blog/img/image-slider-1.jpg);
+  background-size: cover;
   padding: 4rem; }
+
+.post {
+  background-color: #fff;
+  grid-column: 4 / span 2;
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+  box-shadow: 0 1rem 4rem rgba(156, 129, 86, 0.2); }
 
 .main {
-  grid-column: 3/4;
-  grid-row: 2/3; }
+  grid-column: 3 / span 3;
+  grid-row: 2 / 3;
+  color: #858799; }
 
 .footer {
-  background-color: brown;
-  grid-column: 2 / span 4;
-  grid-row: 3/-1;
+  background-color: #fff;
+  color: #858799;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  grid-column: 3 / span 4;
+  grid-row: 4 / -1;
   padding: 4rem; }
 
+.pagination {
+  grid-column: 3 / span 3;
+  grid-row: 3/4;
+  background-color: bisque;
+  padding: 2rem 0;
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: space-between; }
+
+.btn-white {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: #fff;
+  color: #858799;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s; }
+  .btn-white:hover {
+    color: #9c8156; }
+
 .sidebar {
-  grid-column: 5/6;
-  grid-row: 2/3;
-  background-color: cadetblue; }
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+  background-color: #fff;
+  color: #858799;
+  box-shadow: 0 1rem 4rem rgba(156, 129, 86, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem 8rem; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #333333; }
+
+.heading-2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #858799; }
+  .heading-2 a {
+    text-decoration: none;
+    color: #333333;
+    transition: all 0.3s; }
+    .heading-2 a:hover {
+      color: #9c8156; }

@@ -1,0 +1,13 @@
+<div class="pagination">
+    {% if page.has_previous %}
+    <a href="?page={{posts.previous_page_number}}" class="btn btn-white u-h-margin-medium">&lt; Previous Posts</a>
+    {% else %}
+    <a href="#" class="btn btn-white u-h-margin-medium" style="pointer-events: none">&lt; Previous Posts</a>
+    {% endif %}
+   Page {{posts.number}} of {{posts.paginator.num_pages}}.
+   {% if page.has_next %}
+   <a href="?page={{posts.next_page_number}}" class="btn btn-white u-h-margin-medium">Next Posts &gt;</a>
+   {% else %}
+   <a href="#" class="btn btn-white u-h-margin-medium" style="pointer-events: none">Next Posts &gt;</a>
+   {% endif %}
+</div>

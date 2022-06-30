@@ -1,2 +1,7 @@
 .post {
+  background-color: $color-white;
+  grid-column: 4 / span 2;
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+  box-shadow: 0 1rem 4rem rgba($color-primary, $alpha: 0.2);
 }

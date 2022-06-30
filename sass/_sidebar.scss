@@ -1,5 +1,9 @@
 .sidebar {
-  grid-column: 5/6;
-  grid-row: 2/3;
-  background-color: cadetblue;
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+  background-color: $color-white;
+  color: $color-grey-light;
+  box-shadow: 0 1rem 4rem rgba($color-primary, $alpha: 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem 8rem;
 }

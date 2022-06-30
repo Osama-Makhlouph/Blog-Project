@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +17,7 @@
 </head>
 <body class="container">
     <header class="header">
-        <h1 class="heading--1">MAECENAS CONSECTETUR</h1>
+        <h1 class="heading-1">MAECENAS CONSECTETUR</h1>
         <p>Lorem <span>ipsum dolor</span> sit amet</p>
     </header>
     <main class="main">
@@ -25,11 +27,14 @@
             </section>  
         </article>             
     </main>
+    {% include 'blog/pagination.html' with page=posts%}
     <aside class="sidebar">
-        <h2>My blog</h2>
+        <h2 class="heading-2">My blog</h2>
         <p>this is my blog.</p>
     </aside>
-    <footer class="footer">Footer</footer>
-    <!--nav/footer-->
+    <footer class="footer">
+        Created by Osama Makhlouph Copyright © 2022. All Rights Reserved
+    </footer>
+    <!--nav/-->
 </body>
 </html>
