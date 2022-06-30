@@ -11,18 +11,20 @@
       "**/.settings": true,
       "**/.factorypath": true,
       "blog_env": true,
-      "README.md": true
+      "README.md": true,
+      "blog/__pycache__": true
     },
     "hide-files.files": [
       "blog_env",
-      "README.md"
+      "README.md",
+      "blog/__pycache__"
     ],
     "emmet.includeLanguages": {
         "django-html": "html",
         "jinja-html": "html"
     },
     "[django-html]": {
-        "editor.defaultFormatter": "HookyQR.beautify",
+       
         "editor.quickSuggestions": {
             "comments": true,
             "other": true,

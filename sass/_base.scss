@@ -1,0 +1,35 @@
+$color-primary: #9c8156;
+
+$color-grey-dark: #333333;
+$color-grey-light: #858799;
+
+$color-white: #fff;
+$color-black: #000;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: $color-white;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: url(../blog/static/blog/img/bg.jpg);
+}
+.container {
+  display: grid;
+  grid-template-rows: 40vh 50vh 10vh;
+  grid-template-columns: repeat(6, minmax(25rem, 1fr));
+  grid-gap: 4rem;
+  padding: 4rem;
+}

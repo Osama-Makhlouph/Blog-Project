@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: url(../blog/static/blog/img/bg.jpg); }
+
+.container {
+  display: grid;
+  grid-template-rows: 40vh 50vh 10vh;
+  grid-template-columns: repeat(6, minmax(25rem, 1fr));
+  grid-gap: 4rem;
+  padding: 4rem; }
+
+.header {
+  grid-column: 2 / span 4;
+  grid-row: 1 / 2;
+  background-color: crimson;
+  padding: 4rem; }
+
+.main {
+  grid-column: 3/4;
+  grid-row: 2/3; }
+
+.footer {
+  background-color: brown;
+  grid-column: 2 / span 4;
+  grid-row: 3/-1;
+  padding: 4rem; }
+
+.sidebar {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  background-color: cadetblue; }
