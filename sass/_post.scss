@@ -3,5 +3,6 @@
   grid-column: 4 / span 2;
   padding: 2rem 4rem;
   margin-top: 2rem;
-  box-shadow: 0 1rem 4rem rgba($color-primary, $alpha: 0.2);
+  box-shadow: 0 0.5rem 4rem rgba($color-primary, $alpha: 0.15);
+  border-radius: 5px;
 }
