@@ -12,12 +12,14 @@
       "**/.factorypath": true,
       "blog_env": true,
       "README.md": true,
-      "blog/__pycache__": true
+      "blog/__pycache__": true,
+      "node_modules": true
     },
     "hide-files.files": [
       "blog_env",
       "README.md",
-      "blog/__pycache__"
+      "blog/__pycache__",
+      "node_modules"
     ],
     "emmet.includeLanguages": {
         "django-html": "html",
